@@ -1,0 +1,211 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px 6px 6px 6px;
+-webkit-border-radius: 6px 6px 6px 6px;
+border: 5px none #000000;
+
+}
+
+#body{
+	height:100%;
+	
+}
+
+#contenedor {
+	width: 1000px;
+	height:100%;
+	margin:auto;
+	margin-top:20px;
+	background:#ffffff;
+
+}
+	
+
+header{
+	background:#ffffff;
+	height:150px
+	
+}
+
+ header h3{
+	color:#145600;
+	font-size:34px;
+	font-weight:bold;
+	font-family:arial;
+	margin-left:-500px;
+	line-height:100px;
+	margin-top:50px;
+	
+	
+}
+
+header h6{
+	color:#145600;
+	font-size:12px;
+	font-family:arial;
+	margin-bottom:-150px;
+	margin-left:-580px;
+	margin-top:-30px;
+}
+
+
+    
+
+#banner{
+    
+     height:290px;
+	 margin:0px;
+	 
+	 
+}
+	
+	
+	
+	img{
+border-radius: 37px 37px 37px 37px;
+-moz-border-radius: 37px 37px 37px 37px;
+-webkit-border-radius: 37px 37px 37px 37px;
+border: 0px hidden #145600;
+	}
+	
+	
+nav{
+	background:#000000;
+	height:50px;
+	margin-top:1px;
+}
+
+nav li{
+	list-style:none;
+	display: inline-table;
+	padding:20px 0px;
+	
+}
+
+nav a {
+	color:#ffffff;
+	font-size: 14px;
+	font-family:arial;
+	text-decoration:none;
+	padding:20px;
+}
+
+nav a:hover{
+	background:#ffffff;
+	color:#000000;
+}
+
+#contenido{
+	float:left;
+	width:780px;
+	background:#ffffff;
+	overflow:hidden;
+	height:5500px;
+
+}	
+
+
+	
+	
+
+
+.articulos h1{
+	font-size:40px;
+	padding:10px;
+	color:#000000;
+	width:450px;
+	font-family:inherit;
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+.articulos img{
+	margin:10px;
+	width:600px;
+}
+
+.articulos p{
+	margin-bottom:10px;
+	margin-top:10px;
+	line-height:15px;
+	font-size:20px;
+	width:600px;
+	font-family:inherit;
+    font-weight: inherit;
+	font-style: inherit;
+}
+
+aside{
+	
+	float:right;
+	width:220px;
+	background:#ffffff;
+	height:5500px;
+	
+}
+	
+
+#buscar{
+	float:right;
+	height:150px;
+	background:000000;
+	margin-top:20px;
+	line-height:100px;
+	margin-bottom:-50px;
+	margin-right:50px;
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook2 {background:#0011FF;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-plus3 {background: #d95232;}
+	.social ul li .icon-whatsapp {background: #0CF830;}
+	.social ul li .icon-mail4 {background: #FF0000;}
+ 
+	.social ul li a:hover {
+		background: #000000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+input[type="search"]{
+    width: 150px; /*ancho por defecto*/
+    background: #ededed url('search-icon.png') no-repeat 9px center; /*icono lupa*/
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 250px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+

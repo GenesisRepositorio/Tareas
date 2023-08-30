@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head><link rel="icon" type="image/jpg" href="C:\Users\genes\Desktop\TrabajoHTML\osop.jpg" />
+
+     <title>Noticias Ambientales | Daños y cambios críticos del Medio Ambiente   </title>
+	 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+-->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.infinitecarousel.js"></script>
+  <script type="text/javascript">
+$(function()
+{
+	$('#carousel').infiniteCarousel({
+		displayTime: 6000, //velocidad de cambio de fotos
+		textholderHeight : .25 //alto de barra transparente para el texto 
+	   });
+});
+   
+
+   </script>
+
+
+
+
+<script>
+
+$(document).ready(function() {	
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(500);	
+		$('#mask').fadeTo("normal",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+function centrar() { 
+    iz=(screen.width-document.body.clientWidth) / 2; 
+    de=(screen.height-document.body.clientHeight) / 2; 
+    moveTo(iz,de); 
+}  
+	
+		//transition effect
+		$(id).fadeIn(10); 
+	
+	});
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	
+});
+
+</script>
+
+	    
+         <meta charset="utf-8" />
+         <link rel="stylesheet" href="C:\Users\genes\Desktop\TrabajoHTML\css\estilos.css" />
+		        <link rel="stylesheet" href="C:\Users\genes\Desktop\TrabajoHTML\css\fonts.css" />
+
+       
+</head>
+ 
+<body background="C:\Users\genes\Desktop\TrabajoHTML\fondo.jpg">
+ <div id="contenedor">
+		 <div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com" target="_blank"  class="icon-facebook2"></a></li>
+						
+
+			<li><a href="http://www.twitter.com"  class="icon-twitter"></a></li>
+			<li><a href="http://www.googleplus.com" class="icon-google-plus3"></a></li>
+			<li><a href="http://www.pinterest.com"  class="icon-whatsapp"></a></li>
+			<li><a href="conts:genesis_29@live.cl" class="icon-mail4"></a></li>
+		</ul>
+	</div>
+
+        
+       <header>
+		   <h3><p ALIGN=center>Noticias Ambientales</p></h3>
+		   
+           <h6><p ALIGN=center> Daños y cambios críticos del Medio Ambiente.</p></h6>
+		   <div id="buscar">
+		   <input type="Text" name="" value="buscar" size="12">
+		   </div>
+        </header>
+	
+	   <section>
+	   
+	    <div id="carousel" style="color:#FFFFFF;">
+		 
+	<ul>
+		<li><img alt="" src="pier.jpg" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas­.</a></p>
+		</li>
+		<li><img alt="" src="ko.jpg" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas­.</a></p>
+		</li>
+		<li><img alt="" src="ove.jpg" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas-.</a></p>
+		</li>
+		<li><img alt="" src="pai.jpg" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas­.</a></p>
+		</li>
+		<li><img alt="" src="pe.png" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas­.</a></p>
+		</li>
+		<li><img alt="" src="banner.jpg" width="1000" height="288" />
+		<p><br />
+		<a href="">leer mas­.</a></p>
+		</li>
+	</ul>
+		 
+		 </div>
+
+	
+	  
+	   </section>
+	  
+	    <nav>
+	    <ul>
+		   <li><a href="C:\Users\genes\Desktop\TrabajoHTML\inicio.html">Inicio</a></li>
+		   <li><a href="C:\Users\genes\Desktop\TrabajoHTML\mundial.html">Mundial</a></li>
+		   <li><a href="C:\Users\genes\Desktop\TrabajoHTML\local.html">Local</a></li>
+		      <li><a href="C:\Users\genes\Desktop\TrabajoHTML\local.html">Consejos</a></li>
+		   <li><a href="C:\Users\genes\Desktop\TrabajoHTML\local.html">Informate</a></li>
+		   <li><a href="C:\Users\genes\Desktop\TrabajoHTML\local.html">Contactenos</a></li>
+		   </ul>
+    </nav>
+     <section id="contenido">
+	  
+			      <article class="articulos">
+		  <hr>
+		<center> <h1> Explotación furtiva de 2/3 de reservas de la humanidad</h1></center>
+	 			<center><img src="C:\Users\genes\Desktop\TrabajoHTML\ball.jpg" alt=""></center>
+			<center>	<p ALIGN=left>Dos de cada tres espacios naturales patrimonio de la humanidad están siendo explotados de manera furtiva, según IUCN</p>
+                <p ALIGN=left>Dos tercios de los 57 espacios naturales declarados Patrimonio de la Humanidad por la ONU están siendo explotados de forma furtiva por pescadores, leñadores y cazadores ilegales, por personas que comercian con especies protegidas o por otras actividades delictivas, según la Unión Internacional de Conservación de la Naturaleza (IUCN, por sus siglas en inglés).</p>
+				<p ALIGN=left>La organización ha puesto de relieve el "riesgo" que esto implica para algunas de las especies "más preciadas y únicas" del planeta, como es el caso del pez vaquita, el más pequeño de los cetáceos descubiertos y "al borde" de la extinción, y ha señalado las islas mexicanas y las áreas protegidas del Golfo de California como dos zonas que recomienda incluir en la lista de espacios protegidos en riesgo, debido a la pesca ilegal que se registra en ellas.</p>
+				<p ALIGN=left>"Pese a los grandes esfuerzos de México para combatir la pesca con redes de enmaye de fondo, la supervivencia de la vaquita corre un riesgo severo, con un impacto en una población salvaje de la que quedan solamente 30 individuos", ha advertido IUCN sobre esta especie.</p>
+				<p ALIGN=left>Junto con estos territorios, señala también el riesgo que sufren la selva de Atsinanana, en Madagascar, por la tala para la extracción de madera de ébano y palosanto, y el bosque Bialowieza, "uno de los últimos bosques vírgenes que quedan en Europa" y que se sitúa entre Polonia y Bielorrusia.</p>
+	            <p ALIGN=left>"Si Polonia continúa sin vigilar la extracción de madera y la tala en zonas de bosque viejo, se perderán áreas que permanecían intactas", señala la organización sobre el espacio europeo, hábitat del bisón europeo y de más de 250 especies de pájaros y de más de 12.000 invertebrados.</p>
+                <p ALIGN=left>Frente a estas situaciones, IUCN ha hecho hincapié en la cooperación internacional como una herramienta útil para combatir con las actividades ilegales en áreas protegidas. En este sentido, ha señalado el caso del área forestal Dong Phayayen-Khao Yai, en Tailandia, donde la acción conjunta de Taliandia, Camboya, Lao y Vietnam "está empezando a obtener resultados" desde el punto de vista de la reducción de extracción de leña furtiva, una actividad que pone en riesgo a las especies animales que habitan la zona. </p>
+                <p ALIGN=left>"El estatus de Patrimonio de la Humanidad lo que pretende es garantizar que estos lugares tienen el más alto nivel de protección y nosotros, como comunidad internacional, somos los responsables de que esa protección sea efectiva. Solo a través de una cooperación internacional fuerte podremos erradicar las prácticas ilegales e insostenibles que están causando un impacto devastador sobre estos lugares extraordinarios", ha enfatizado el director general de la organización, Inger Andersen.</p></center>
+</article>
+			<article class="articulos">
+			
+			
+			<hr>
+			<center><img src="C:\Users\genes\Desktop\TrabajoHTML\briga.jpg" alt=""></center>
+		<center>	<p>Objetivo contra el fuego: evitar siete de cada diez incendios</p>
+
+<p ALIGN=left>La consejera de Medio Ambiente, Elena Cebrián, pide “máxima precaución” y políticas de prevención</p>
+<p ALIGN=left>La consellera de Agricultura y Medio Ambiente, Elena Cebrián, ha indicado este miércoles que el riesgo de grandes incendios”, aquellos que afectan a más de 500 hectáreas, “es muy alto y durante todo el año” en la Comunitat, por lo que ha pedido “máxima precaución” y políticas de prevención.</p>
+
+<p ALIGN=left>En su intervención en el Fórum Europa Tribuna Mediterránea, la consellera ha indicado que todos los informes técnicos y los expertos alertan desde años de que el riesgo de los llamados grandes incendios en la Comunitat Valenciana “es cada vez mayor”.</p>
+
+<p ALIGN=left>“Nuestra principal preocupación, la mayor amenaza a que nos enfrentamos, son los incendios forestales”, ha asegurado Cebrián, quien ha añadido que este territorio es “especialmente vulnerable” al riesgo de incendio, un riesgo que crece con los efectos del cambio climático.</p>
+
+<p ALIGN=left>Por ello, ha considerado que “el verdadero desafío” pasa por fortalecer las medidas de prevención, y por ello el actual Consell destina 19 millones de euros a ese ámbito, una cifra que “no es suficiente, pero es más que hace dos años”, cuando el Ejecutivo del PP redujo ese presupuesto de los 33 millones de 2009 a los 16 de 2014.</p>
+
+<p ALIGN=left>Además, ha indicado que se ha reforzado el dispositivo de vigilancia y prevención, y de manera específica están apostando por más concienciación y divulgación, con la campaña #stopalfoc, ya que las causas humanas están detrás del 80 % de los incendios.</p>
+
+<p ALIGN=left>Cebrián ha resaltado que hay que ser conscientes del impacto “destructor” de los incendios forestales, sobre todo por el riesgo que supone para las vidas humanas, que “a menudo es incomprensiblemente olvidado”.</p>
+
+<p ALIGN=left>La consellera ha enviado un mensaje de ánimo a Portugal por el incendio que les afecta, donde se han conjugado de forma “excepcional y trágica” altísimas temperaturas, vientos que han producido lo que se ha llamado una tormenta de fuego, y la confluencia de muchas personas dispersas en esa zona.</p>
+
+<p ALIGN=left>Preguntada sobre si cabría un endurecimiento de las penas para quienes causan los incendios, la consellera ha afirmado que, aunque no se trata de su ámbito, entiende que sí, y que eso debe estar complementado con “muchas más medidas de concienciación, de educación y de divulgación” sobre el “enorme riesgo” existente.</p>
+
+<p ALIGN=left>Cebrián ha reivindicado que han impulsado una nueva política forestal, con un modelo de gestión sostenible, enfocado a recuperar y potenciar la función protectora de los bosques, unida a la sostenibilidad económica y social.</p>
+
+<p ALIGN=left>Dentro de esa reorientación, ha explicado que se han impulsado trabajos selvícolas de mejora, un plan de recuperación de la vegetación y restauración forestal de zonas quemadas en los últimos 20 años, y ayudas para el comercio responsable y el aprovechamiento sostenible de productos forestales.</p>
+
+<p ALIGN=left>Además, ha indicado que esta nueva política se basa en actuar para reforzar la propia capacidad del bosque para defenderse ante los incendios, de manera que su estructura evite o frene la propagación del fuego en caso de incendio.</p>
+
+<p ALIGN=left>Fuente: http://www.elmundo.es/comunidad-valenciana/2017/06/20/5948ec20268e3e3c4c8b4621.html</p> </center>
+			
+			
+			
+			
+			
+			</article>
+          <article class="articulos">
+		  <hr>
+		<center> <h1> Explotación furtiva de 2/3 de reservas de la humanidad</h1></center>
+	 			<center><img src="C:\Users\genes\Desktop\TrabajoHTML\ball.jpg" alt=""></center>
+			<center>	<p ALIGN=left>Dos de cada tres espacios naturales patrimonio de la humanidad están siendo explotados de manera furtiva, según IUCN</p>
+                <p ALIGN=left>Dos tercios de los 57 espacios naturales declarados Patrimonio de la Humanidad por la ONU están siendo explotados de forma furtiva por pescadores, leñadores y cazadores ilegales, por personas que comercian con especies protegidas o por otras actividades delictivas, según la Unión Internacional de Conservación de la Naturaleza (IUCN, por sus siglas en inglés).</p>
+				<p ALIGN=left>La organización ha puesto de relieve el "riesgo" que esto implica para algunas de las especies "más preciadas y únicas" del planeta, como es el caso del pez vaquita, el más pequeño de los cetáceos descubiertos y "al borde" de la extinción, y ha señalado las islas mexicanas y las áreas protegidas del Golfo de California como dos zonas que recomienda incluir en la lista de espacios protegidos en riesgo, debido a la pesca ilegal que se registra en ellas.</p>
+				<p ALIGN=left>"Pese a los grandes esfuerzos de México para combatir la pesca con redes de enmaye de fondo, la supervivencia de la vaquita corre un riesgo severo, con un impacto en una población salvaje de la que quedan solamente 30 individuos", ha advertido IUCN sobre esta especie.</p>
+				<p ALIGN=left>Junto con estos territorios, señala también el riesgo que sufren la selva de Atsinanana, en Madagascar, por la tala para la extracción de madera de ébano y palosanto, y el bosque Bialowieza, "uno de los últimos bosques vírgenes que quedan en Europa" y que se sitúa entre Polonia y Bielorrusia.</p>
+	            <p ALIGN=left>"Si Polonia continúa sin vigilar la extracción de madera y la tala en zonas de bosque viejo, se perderán áreas que permanecían intactas", señala la organización sobre el espacio europeo, hábitat del bisón europeo y de más de 250 especies de pájaros y de más de 12.000 invertebrados.</p>
+                <p ALIGN=left>Frente a estas situaciones, IUCN ha hecho hincapié en la cooperación internacional como una herramienta útil para combatir con las actividades ilegales en áreas protegidas. En este sentido, ha señalado el caso del área forestal Dong Phayayen-Khao Yai, en Tailandia, donde la acción conjunta de Taliandia, Camboya, Lao y Vietnam "está empezando a obtener resultados" desde el punto de vista de la reducción de extracción de leña furtiva, una actividad que pone en riesgo a las especies animales que habitan la zona. </p>
+                <p ALIGN=left>"El estatus de Patrimonio de la Humanidad lo que pretende es garantizar que estos lugares tienen el más alto nivel de protección y nosotros, como comunidad internacional, somos los responsables de que esa protección sea efectiva. Solo a través de una cooperación internacional fuerte podremos erradicar las prácticas ilegales e insostenibles que están causando un impacto devastador sobre estos lugares extraordinarios", ha enfatizado el director general de la organización, Inger Andersen.</p></center>
+</article>
+	</section>
+	 <aside>
+	<table>
+  <tr>
+     <td>Fecha</td>
+     <td>
+         <input type="date">
+     </td>
+         
+    </tr>
+	</table>
+	
+ 
+   <img src="C:\Users\genes\Desktop\TrabajoHTML\glaciar.jpg" alt=""/>
+   <br>
+  <br>
+     Deforestación
+    <iframe width="191" height="150" src="https://www.youtube.com/embed/ZaZZFm7vhds" frameborder="0" allowfullscreen> </iframe>
+ <br>
+ <br>
+    <img src="C:\Users\genes\Desktop\TrabajoHTML\huemul.jpg" alt=""/>
+	
+	     
+
+
+
+
+
+
+
+
+		</aside>
+		   
+		   
+		   
+		   
+	</div>	   
+    
+</body>
+</html>
